@@ -61,8 +61,8 @@ app.use("/",generalRoute)
 //Error Middleware
 app.use(errorMiddleWare)
 
-
-app.listen(8080,()=>console.log("App Started @ Port", 8080)) 
+const PORT = process.env.PORT || 8080
+app.listen(PORT,()=>console.log("App Started @ Port", PORT)) 
   
 
   process.on('uncaughtException', function (err) {
