@@ -1,0 +1,98 @@
+<%-include("../partials/header");%>
+
+<div class="breadcumb-area">
+    <!-- breadcumb content -->
+    <div class="breadcumb-content">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb" class="breadcumb--con text-center">
+                        <h2 class="w-text title wow fadeInUp" data-wow-delay="0.2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">Contact Us
+                        </h2>
+                        <ol class="breadcrumb justify-content-center wow fadeInUp" data-wow-delay="0.4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="section-padding-100 contact_us_area" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-heading text-center">
+                    <div class="mb-15 justify-content-center fadeInUp" data-wow-delay="0.2s">
+                        <span class="gradient-text blue">Contact Us</span>
+                    </div>
+                    <h2 class="wow fadeInUp" data-wow-delay="0.3s"
+                        style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">Contact With Us</h2>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <div class="contact_form">
+                    <form id="main_contact_form">
+                        <div class="row">
+                            
+
+                            <div class="col-12 col-md-6">
+                                <div class="group wow fadeInUp" data-wow-delay="0.2s"
+                                    style="visibility: hidden; animation-delay: 0.2s; animation-name: none;">
+                                    <input type="text" name="name" id="name" required="">
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Name</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="group wow fadeInUp" data-wow-delay="0.3s"
+                                    style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+                                    <input type="text" name="email" id="email" required="">
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="group wow fadeInUp" data-wow-delay="0.4s"
+                                    style="visibility: hidden; animation-delay: 0.4s; animation-name: none;">
+                                    <input type="text" name="subject" id="subject" required="">
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="group wow fadeInUp" data-wow-delay="0.5s"
+                                    style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                                    <textarea name="message" id="message" required=""></textarea>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.6s"
+                                style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
+                                <button type="submit" class="btn more-btn">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/js/home/contact.js"></script>
+<script src="/js/partials/sweetalert.js"></script>
+<%-include("../partials/footer");%>

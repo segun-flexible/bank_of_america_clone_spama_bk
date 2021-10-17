@@ -1,0 +1,54 @@
+<div class="modal fade" id="exampleModal-<%=pl.plan_id%>" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <%if(user){%>
+
+            
+            <form role="form" id="purchase">
+                
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel"><i class="fa fa-shopping-cart"></i>
+                        Purchase Now </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+                            class="black">X</span></button>
+                </div>
+                <div class="modal-body">
+                    <p class="error">Hey <%=user.username%>, You want to purchase (<span id="list"><%=pl.plan_name%></span>) plan which price is <span id="list"><%=pl.plan_price%> <%=websiteDetails.website_currency%></span> and the maximum amount you will earn on this plan is <span id="list"><%=pl.plan_recurring_max%> <%=websiteDetails.website_currency%></span>. 
+                    <br>
+                    You will earn recurring and purchase bonus from your downline (referrees) up to <span id="list"><%=websiteDetails.website_matrix_gen%></span> downline's generation.
+                    <br>
+                    Once you earn upto <span id="list"><%=pl.plan_recurring_max%> <%=websiteDetails.website_currency%></span> the plan will expired and you will need to upgrade to the next plan ahead.
+
+                    <br>While on this lovely plan, you will be paying <span id="list"><%=pl.plan_recurring_fee%> <%=websiteDetails.website_currency%></span> daily for recurring fee after <span id="list"><%=pl.plan_recurring_start%> days</span> of your registration.</p>
+                    </div>
+
+                    <input id="planId" value="<%=pl.plan_id%>" type="text" hidden>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal"> No, Close Modal </button>
+                    <button type="submit" class="btn btn-success"> Yes, I Proceed </button>
+                </div>
+            </form>
+            <%}else{%>
+            <div class="modal-body">
+                <form>
+                
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel"><i class="fa fa-key" aria-hidden="true"></i>
+                        You Need To Login First </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+                            class="black">X</span></button>
+                </div>
+                <div class="modal-body">
+                    <p class="error">Please Login Or Register To Purchase Plan</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="/login" class="btn btn-primary">Login</a>
+                    <a href="/register" class="btn btn-danger">Register</a>
+                </div>
+            </form>
+                
+            </div>
+            <%}%>
+        </div>
+    </div>
+</div>

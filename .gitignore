@@ -1,0 +1,8 @@
+node_modules
+seeder.txt
+whatnext.txt
+debug-log
+.vscode
+route.txt
+index.html
+yarn.lock
