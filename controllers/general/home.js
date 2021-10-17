@@ -6,7 +6,7 @@ const { getRandomNumber } = require("../../helpers/uniqueID");
 const fs = require("fs");
 
 exports.homePage = asyncHandler(async (req, res, next) => {
-    return res.render("general/home/home");
+    return res.send("Backend Working")
 })
 
 
